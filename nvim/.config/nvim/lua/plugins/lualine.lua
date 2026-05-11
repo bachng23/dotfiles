@@ -7,7 +7,7 @@ return {
     config = function()
       require("lualine").setup({
         options = {
-          theme = "oceanicnext",
+          theme = "onedark",
           globalstatus = true,
           section_separators = "",
           component_separators = "",
