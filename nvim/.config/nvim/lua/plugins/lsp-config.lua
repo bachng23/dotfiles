@@ -64,11 +64,6 @@ return {
       vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "LSP Hover" })
       vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename" })
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
-
-      -- Format nhanh bằng Ruff
-      vim.keymap.set("n", "<leader>f", function()
-        vim.lsp.buf.format({ async = true })
-      end, { desc = "Format file" })
     end,
   },
 }

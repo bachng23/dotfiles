@@ -7,10 +7,13 @@ return {
     config = function()
       require("lualine").setup({
         options = {
-          theme = "auto",
+          theme = "catppuccin-mocha",
           globalstatus = true,
           section_separators = "",
           component_separators = "",
+        },
+        sections = {
+          lualine_x = { "encoding", "filetype" },
         },
       })
     end,

@@ -1,0 +1,31 @@
+theme = "Broadcast"
+
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+
+window-decoration = false
+cursor-style=block
+adjust-cell-height=35%
+mouse-scroll-multiplier = 2
+window-colorspace = "display-p3"
+copy-on-select = clipboard
+window-save-state = always
+
+cursor-opacity = 0.90 
+adjust-cursor-thickness = 1
+
+# Font cấu hình (Quan trọng nhất để không lỗi icon p10k)
+font-family = "MesloLGS NF Mono"
+font-size = 16
+
+# Giao diện trong suốt một chút cho đẹp (tùy chọn)
+background-opacity = 0.8
+background-blur = 30
+
+# Ví dụ dùng phím Option + Space để bật nhanh
+quick-terminal-animation-duration = 0.2
+keybind = global:cmd+enter=toggle_quick_terminal
+
+# Đưa cửa sổ ra giữa màn hình
+quick-terminal-position = center
