@@ -16,12 +16,14 @@ require("vim-options")
 require("lazy").setup("plugins")
 
 -- Keymap navigation
-vim.keymap.set('n', '<leader>E', function()
+vim.keymap.set('n', '<leader>E', ':Neotree toggle left<CR>', { desc = "Toggle Neo-tree" })
+
+vim.keymap.set('n', '<leader>w', function()
     local current_filetype = vim.bo.filetype
     if current_filetype == "neo-tree" then
         vim.cmd("wincmd p") -- "p" là "previous": Quay lại cửa sổ trước đó
     else
         vim.cmd("Neotree focus") -- Nhảy vào cửa sổ Neo-tree
     end
-end, { desc = "Chuyển nhanh giữa Code và Neo-tree" })
+end, { desc = "Focus Neo-tree" })
 
