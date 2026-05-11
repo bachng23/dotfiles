@@ -15,6 +15,12 @@ return {
         hide_gitignored = false,
       },
     },
+    window = {
+      mappings = {
+        ["h"] = "close_node",
+        ["l"] = "open",
+      },
+    },
   },
   config = function(_, opts)
     require("neo-tree").setup(opts)
