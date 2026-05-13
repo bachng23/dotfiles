@@ -28,7 +28,7 @@ persistent-workspaces = ["A", "B", "C", "D", "G", "I", "M", "N", "R", "S", "T", 
     inner.vertical =  14
     outer.left = [{monitor.'Built-in Retina Display' = 15}, {monitor.'VA249QG' = 12}, 20]
     
-    outer.bottom = [{monitor.'Built-in Retina Display' = 20}, {monitor.'VA249QG' = 12}, 20]
+    outer.bottom = [{monitor.'Built-in Retina Display' = 12}, {monitor.'VA249QG' = 12}, 20]
     outer.top = [{monitor.'Built-in Retina Display' = 4}, {monitor.'VA249QG' = 6}, 4]
 
     outer.right = [{monitor.'Built-in Retina Display' = 15}, {monitor.'VA249QG' = 12}, 20]    
