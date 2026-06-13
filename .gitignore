@@ -1,0 +1,6 @@
+# nvim runtime noise
+nvim/.config/nvim/nvim.log
+nvim/.config/nvim/lua/plugins/nvim.log
+
+# tmux plugins are managed by TPM, not tracked
+tmux/.config/tmux/plugins/
