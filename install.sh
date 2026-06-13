@@ -9,7 +9,7 @@ set -euo pipefail
 
 # Resolve the directory this script lives in (the dotfiles repo root).
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PACKAGES=(nvim tmux)
+PACKAGES=(nvim tmux zsh)
 
 info()  { printf '\033[1;34m==>\033[0m %s\n' "$1"; }
 warn()  { printf '\033[1;33m!!\033[0m %s\n' "$1"; }
@@ -40,8 +40,13 @@ brew install stow neovim tmux ripgrep fd fzf stylua prettier
 # 3. Stow the dotfiles into $HOME
 # ---------------------------------------------------------------------------
 # If a real (non-symlink) config already exists, back it up so stow won't fail.
-for pkg in "${PACKAGES[@]}"; do
-  target="$HOME/.config/$pkg"
+STOW_TARGETS=(
+  "$HOME/.config/nvim"
+  "$HOME/.config/tmux"
+  "$HOME/.zshrc"
+  "$HOME/.p10k.zsh"
+)
+for target in "${STOW_TARGETS[@]}"; do
   if [ -e "$target" ] && [ ! -L "$target" ]; then
     backup="${target}.backup.$(date +%Y%m%d%H%M%S)"
     warn "Existing $target found — backing up to $backup"

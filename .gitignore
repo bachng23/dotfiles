@@ -4,3 +4,8 @@ nvim/.config/nvim/lua/plugins/nvim.log
 
 # tmux plugins are managed by TPM, not tracked
 tmux/.config/tmux/plugins/
+
+# zsh runtime noise (compiled/cache files, not config)
+zsh/.zcompdump*
+zsh/.zsh_history
+zsh/.zsh_sessions/
